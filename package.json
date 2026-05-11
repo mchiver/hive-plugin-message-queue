@@ -1,0 +1,34 @@
+{
+	"name": "@mchiver/hive-plugin-message-queue",
+	"version": "1.0.0",
+	"description": "Persistent message queue with pub/sub and invoke-mode subscriptions for hive-harness.",
+	"license": "MIT",
+	"author": "Andre' G. Bowlin \u003cagbowlin@gmail.com\u003e",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mchiver/hive-plugin-message-queue.git"
+	},
+	"keywords": [
+		"hive-harness",
+		"plugin",
+		"message-queue",
+		"pub-sub",
+		"queue"
+	],
+	"main": "MessageQueue.factory.js",
+	"files": [
+		"MessageQueue.factory.js",
+		"Tools/",
+		"Tests/",
+		"README.md"
+	],
+	"scripts": {
+		"test": "node --test --test-concurrency=1 --test-reporter=spec ./Tests/*.test.js"
+	},
+	"devDependencies": {
+		"@mchiver/hive-harness": "file:../../hive-harness.git"
+	},
+	"peerDependencies": {
+		"@mchiver/hive-harness": "\u003e=0.1.0"
+	}
+}
