@@ -13,6 +13,7 @@ class Factory
 	{
 		Plugin.Description = 'Persistent message queue with pub/sub and invoke-mode subscriptions.';
 		Plugin.RequiredRole = 'user';
+		Plugin.RequiredPlugins = [];
 
 		// MessageQueue is an entity-type plugin
 		Plugin.EntitySchema = {
